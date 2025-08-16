@@ -1,36 +1,56 @@
 
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #99c4d4;
+    font-family: "Roboto", sans-serif;
+    background: #020024;
+    background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 2%, rgba(0, 212, 255, 1) 100%);
     margin: 0;
     padding: 0;
 }
 
 
 header {
-    background-color: white;
+    background: #2A7B9B;
+    background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 35%, rgba(237, 221, 83, 1) 100%);
     padding: 15px 0;
     text-align: center;
     border-bottom: 1px solid #ddd;
+    font-family: "Libertinus Mono", monospace;
 }
 
 header h1 {
     margin: 0;
     font-size: 24px;
     font-weight: bold;
-    color: #333;
+    color: #333333;
 }
 
 
 .post-column {
     display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px;
-    max-width: 300px;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 30px;
+    max-width: 350px;
     margin: auto;
 }
 
+.img-perfil {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+
+}
+strong {
+    padding-left: 10px;
+    padding-top: 8px;
+}
+
+.name-pic{
+    display: flex;
+    justify-content: flex-start ;
+}
 
 .post {
     max-width:  380px;
@@ -42,16 +62,16 @@ header h1 {
 }
 
 
-.post img {
+.img-foto {
     width: 100%;
     height: 300px; 
-    object-fit: contain;
+    object-fit: ;
     display: block;
 }
 
 
 .description {
-    padding: 10px;
+    padding: 10px 15px;
     font-size: 14px;
     color: #555;
     border-top: 1px solid #eee;
@@ -60,38 +80,41 @@ header h1 {
 
 .actions {
     display: flex;
-    justify-content: space-around;
+    align-content: flex-start;
     padding: 10px;
     border-top: 1px solid #eee;
 }
 
-.actions button {
+.actions i {
     background-color: transparent;
     border: none;
     font-size: 14px;
     cursor: pointer;
-    color: #555;
+    color: black;
 }
 
 .actions button:hover {
     color: #000;
-}
+   }
 
 
 .date {
     padding: 10px;
-    border-top: 1px solid #eee;
     font-size: 12px;
     color: #999;
+    border-top: 1px solid #eee
+       
 }
 
 
 footer {
-    background-color: white;
+    background-color: black;
+    color: white;
     text-align: center;
     padding: 15px;
     border-top: 1px solid #ddd;
     margin-top: 30px;
+    font-family: "Roboto Mono", monospace;
 }
 
 footer button {
@@ -106,4 +129,9 @@ footer button {
 
 footer button:hover {
     background-color: #2a76c4;
+}
+
+.set-home {
+    background-color: #eee;
+    color: black;
 }

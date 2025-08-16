@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>InstaPic Poster</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/18286a149e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libertinus+Mono&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -16,13 +25,15 @@
 
     <article class="post-column">
         <div class="post">
-            <img src="gato.jpg" alt="imagen del gato">
+            <div class="name-pic"><img class="img-perfil" src="fotoperfil.jpg" alt="foto del perfil de usuario"> <strong>El Gato Instagramer</strong></div>
+            <img class="img-foto" src="gato.jpg" alt="imagen del gato">
             <div class="description">
-                <p>Este es mi gato</p>
+                <p>Esta es mi gata, mentira... es una gata que encontre en una galeria de fotos online</p>
             </div>
             <div class="actions">
-                <button>❤️ Me gusta</button>
-                <button>🔗 Compartir</button>
+                <i class="fa-notdog fa-solid fa-heart"></i>
+                <i class="fa-regular fa-comment"></i>
+                <i class="fa-regular fa-paper-plane"></i>
             </div>
             <div class="date">
                 <small>Publicado el 19 de noviembre de 2024</small>
@@ -30,13 +41,15 @@
         </div>
 
         <div class="post">
-            <img src="mercado.jpg" alt="imagen del mercado">
+            <div class="name-pic"><img class="img-perfil" src="fotoperfil.jpg" alt="foto del perfil de usuario"> <strong>El Gato Instagramer</strong></div>
+            <img class="img-foto" src="mercado.jpg" alt="imagen del mercado">
             <div class="description">
-                <p>de compra en el mercado de roma 2.</p>
+                <p>Visitando el viejo mercado del pueblo... </p>
             </div>
             <div class="actions">
-                <button>❤️ Me gusta</button>
-                <button>🔗 Compartir</button>
+                <i class="fa-notdog fa-solid fa-heart"></i>
+                <i class="fa-regular fa-comment"></i>
+                <i class="fa-regular fa-paper-plane"></i>
             </div>
             <div class="date">
                 <small>Publicado el 14 de diciembre de 2024</small>
@@ -44,13 +57,15 @@
         </div>
 
         <div class="post">
-            <img src="museo.jpg" alt="imagen del museo">
+            <div class="name-pic"><img class="img-perfil" src="fotoperfil.jpg" alt="foto del perfil de usuario"> <strong>El Gato Instagramer</strong></div>
+            <img class="img-foto" src="museo.jpg" alt="imagen del museo">
             <div class="description">
-                <p>viaje al museo del mundo 3.</p>
+                <p>Elarte y sus cosas</p>
             </div>
             <div class="actions">
-                <button>❤️ Me gusta</button>
-                <button>🔗 Compartir</button>
+                <i class="fa-notdog fa-solid fa-heart"></i>
+                <i class="fa-regular fa-comment"></i>
+                <i class="fa-regular fa-paper-plane"></i>
             </div>
             <div class="date">
                 <small>Publicado el 24 de enero de 2025</small>
@@ -58,27 +73,31 @@
         </div>
 
         <div class="post">
-            <img src="playa.jpg" alt="imagen de la playa">
+            <div class="name-pic"><img class="img-perfil" src="fotoperfil.jpg" alt="foto del perfil de usuario"> <strong>El Gato Instagramer</strong></div>
+            <img class="img-foto" src="playa.jpg" alt="imagen de la playa"> 
             <div class="description">
-                <p>arenita playita...</p>
+                <p>Caminar por la playa en un dia tan lindo como este. lo mejor!!!</p>
             </div>
             <div class="actions">
-                <button>❤️ Me gusta</button>
-                <button>🔗 Compartir</button>
+                <i class="fa-notdog fa-solid fa-heart"></i>
+                <i class="fa-regular fa-comment"></i>
+                <i class="fa-regular fa-paper-plane"></i>
             </div>
             <div class="date">
                 <small>Publicado el 10 de junio de 2025</small>
             </div>
         </div>
 
-         <div class="post">
-            <img src="mar.jpg" alt="imagen del mar">
+        <div class="post">
+            <div class="name-pic"><img class="img-perfil" src="fotoperfil.jpg" alt="foto del perfil de usuario"> <strong>El Gato Instagramer</strong></div>
+            <img class="img-foto" src="mar.jpg" alt="imagen del mar">
             <div class="description">
-                <p>vistas al mar.</p>
+                <p>Espectaculares vistas al mar con la y una antigua fortaleza</p>
             </div>
             <div class="actions">
-                <button>❤️ Me gusta</button>
-                <button>🔗 Compartir</button>
+                <i class="fa-notdog fa-solid fa-heart"></i>
+                <i class="fa-regular fa-comment"></i>
+                <i class="fa-regular fa-paper-plane"></i>
             </div>
             <div class="date">
                 <small>Publicado el 12 de agosto de 2025</small>
@@ -88,8 +107,11 @@
 
     <footer>
         <p>Contacto: haroldmaldonado1@gmail.com | Tel: +34 123 456 789</p>
-        
-        
+        <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" class="set-home">
+            Volver al inicio
+        </button>
+
+
     </footer>
 
 </body>
